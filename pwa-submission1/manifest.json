@@ -1,0 +1,30 @@
+{
+    "name": "Ice Juice App",
+    "short_name": "Ice Juice",
+    "description": "Fresh Your Day",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffd54f",
+    "theme_color": "#ffd54f",
+    "icons": [{
+        "src": "assets/icon192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+    }, {
+        "src": "assets/icon192mask.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+    }, {
+        "src": "assets/icon512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+    }, {
+        "src": "assets/icon512mask.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    }]
+}

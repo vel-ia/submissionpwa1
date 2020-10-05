@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ice Juice! Official Website</title>
+    <meta name=" description " content="Ice Juice " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="css/materialize.min.css ">
+    <link rel="manifest " href="/manifest.json ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <meta name="theme-color" content="#ffd54f" />
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav class="amber lighten-1" role="navigation ">
+        <div class="nav-wrapper container">
+            <a href="# " class="brand-logo black-text" id="logo-container ">Ice Juice</a>
+            <a href="# " class="sidenav-trigger black-text " data-target="nav-mobile ">☰</a>
+            <ul class="topnav right hide-on-med-and-down "></ul>
+            <ul class="sidenav " id="nav-mobile "></ul>
+        </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <div class="container" id="body-content"></div>
+
+    <!--Footer -->
+    <footer class="page-footer amber lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h4 class="grey-text text-darken-3" href="#home">Ice Juice</h4>
+                    <p class="grey-text text-darken-3 "><strong>Find Us : </strong></p>
+                    <blockquote class="black-text">
+                        <strong>Store</strong> : Jl.Melati Raya No. 99 Kebayoran Baru, Jakarta Selatan 18272
+                        <br> <strong>Phone</strong>: +62 82919101010
+                        <br> <strong>Email</strong> : icejuice@mail.id
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright ">
+            <div class="container grey-text text-darken-3">
+                © 2020 Ice Juice - Fresh For You
+            </div>
+        </div>
+    </footer>
+    <!--Akhir Footer -->
+
+    <script src="js/materialize.min.js "></script>
+    <script src="js/nav.js "></script>
+    <script>
+        // REGISTER SERVICE WORKER
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function() {
+                navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then(function() {
+                        console.log("Pendaftaran ServiceWorker berhasil");
+                    })
+                    .catch(function() {
+                        console.log("Pendaftaran ServiceWorker gagal");
+                    });
+            });
+        } else {
+            console.log("ServiceWorker belum didukung browser ini.");
+        }
+    </script>
+</body>
+
+</html>
